@@ -26,3 +26,4 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+gem "rexml", "~> 3.3.9"
