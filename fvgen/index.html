@@ -179,10 +179,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" src="./static/images/teaser.png" height="100%">
+      <video id="teaser-video" autoplay controls muted loop playsinline width="100%">
+        <source src="./static/videos/teaser_side_by_side.mp4"
+                type="video/mp4">
+      </video>
+      <p style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
+        FVGen is a method of fast novel-view synthesis for 3D scene reconstruction with sparse inputs.
+      </p>
+      <img id="teaser" src="./static/images/teaser.png" height="100%" style="margin-top: 40px;">
       <p>
-        <span class="dnerf">Figure 1.</span> We present FVGen, a method of fast novel-view synthesis for 
-        3D scene reconstruction with sparse inputs. <a href="https://arxiv.org/abs/2409.02048">Recent method</a> unleash the generation 
+        <span class="dnerf">Figure 1.</span> <a href="https://arxiv.org/abs/2409.02048">Recent method</a> unleash the generation 
         capabilities of video diffusion models conditioned on a prior 3D cue for dense view creation, 
         but always suffers from a long sampling time. We propose a novel framework that can significantly reduce 
         the sampling time and maintain the generation quality.
