@@ -1,0 +1,268 @@
+/* Adapted from https://github.com/jonbarron/jonbarron.github.io/blob/master/stylesheet.css.
+   Original Lato font files are served locally to avoid third-party font requests. */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/lato-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/lato-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/lato-italic.woff2") format("woff2");
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  color: #000;
+  background: #fff;
+}
+
+strong,
+.papertitle {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.intro-copy {
+  padding: 2.5%;
+  width: 63%;
+  vertical-align: middle;
+}
+
+.intro-photo {
+  padding: 2.5%;
+  width: 37%;
+  vertical-align: middle;
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.contact-links a {
+  white-space: nowrap;
+}
+
+.section-heading,
+.text-section {
+  padding: 16px;
+}
+
+.section-heading h2 a {
+  color: inherit;
+  font-size: inherit;
+}
+
+.papers {
+  border-spacing: 0 10px;
+}
+
+.paper-image {
+  padding: 16px;
+  width: 160px;
+  vertical-align: middle;
+}
+
+.paper-image img {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.paper-copy {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.spotlight {
+  display: inline-block;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #7c3aad;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .spotlight {
+    background: linear-gradient(90deg, #b91c1c, #a64500, #786300, #16703b, #1265b0, #7c3aad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (forced-colors: active), print {
+  .spotlight {
+    background: none;
+    color: inherit;
+  }
+}
+
+.news {
+  margin-top: 10px;
+}
+
+.news th {
+  padding: 5px 16px 5px 0;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.news td {
+  padding: 5px 0;
+  vertical-align: top;
+}
+
+.reviewing-list {
+  padding-left: 20px;
+}
+
+.reviewing-list li {
+  margin: 6px 0;
+}
+
+footer {
+  padding: 24px 16px;
+  text-align: right;
+}
+
+footer,
+footer a {
+  font-size: 12px;
+}
+
+.subpage-header {
+  padding: 20px 16px;
+}
+
+.subpage-header .name {
+  text-align: left;
+}
+
+.cv-entry {
+  margin: 16px 0 24px;
+}
+
+.cv-entry p {
+  margin: 5px 0;
+}
+
+.cv-entry ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .intro,
+  .intro tbody,
+  .intro tr,
+  .intro td {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .intro-copy {
+    padding: 16px;
+  }
+
+  .intro-photo {
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 0 16px 16px;
+  }
+
+  .paper-image {
+    width: 25%;
+    padding: 12px 8px;
+  }
+
+  .paper-image img {
+    width: 100%;
+  }
+
+  .paper-copy {
+    overflow-wrap: anywhere;
+  }
+
+  .news th {
+    padding-right: 10px;
+    white-space: normal;
+    width: 70px;
+  }
+}
