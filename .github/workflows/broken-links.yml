@@ -49,4 +49,4 @@ jobs:
         with:
           fail: true
           # Check only published personal pages; legacy al-folio examples are not deployed.
-          args: --base-url https://wbteng9526.github.io --user-agent 'curl/7.54' --verbose --no-progress index.html news/index.html cv/index.html publications/index.html academic_services/index.html
+          args: --base https://wbteng9526.github.io --user-agent 'curl/7.54' --verbose --no-progress index.html news/index.html cv/index.html publications/index.html academic_services/index.html
